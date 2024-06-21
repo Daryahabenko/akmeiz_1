@@ -1,0 +1,133 @@
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: auto;  
+}
+
+.header{
+  height: 70px;
+  display: flex;
+  width: 100%;
+  background: #17053B;
+}
+
+.header-content { 
+display: flex;
+justify-content: space-between;
+}
+
+nav{
+  display: flex;
+}
+
+
+nav a {
+  font-family:  'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 38px;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-right: 75px; /*расстояние между словами в шапке*/
+}
+
+
+.svg{
+	height: 70px;
+	width: 190px;
+}
+
+.services{
+  margin: 5px;
+}
+
+.services h1{
+  color: black;
+  font-family: 'Roboto';
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main{
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.footer {
+  height: 100%;
+  width: 100%;
+  background: #17053B;
+  margin: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer_colum{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer a{
+  text-decoration: none;
+  list-style: none;
+  color: #FFFFFF;
+  font-family:  'Roboto';
+  font-weight: bold;
+}
+
+.parent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+  margin: 15px 15px;
+  padding: 15px 15px;
+  flex-wrap: wrap;
+}
+.child {
+  width: 200px;
+  height: 225px;
+  border: 1px solid #17053B;
+  border-radius: 15px;
+  font-weight: bold;
+  flex-wrap: wrap;
+}
+
+.child img{
+  height: auto;
+  width: 100%;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.child p{
+  color: black;
+  font-family: 'Roboto';
+  padding: 2px;
+  font-size: 14px;
+  text-align: center;
+}
+
+@media screen and (max-width:600px) {
+  .footer{
+    font-size: 8px;
+    width:80% ;
+    height: 80%;
+  }
+  .footer .svg {
+    width: 10px;
+    height: 10px;
+  }
+}
+

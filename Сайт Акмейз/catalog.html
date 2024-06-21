@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet"  href="catalog.css">
+	<link rel="shortcut icon" href="icon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<title>Каталог</title>
+</head>
+<body>
+	<header class="header">
+		<div class="container header-content">
+      		<a href="index.html"><img class="svg" src="images/logo.svg">
+      		<nav>
+        		<a  href="contacts.html">Контакты</a>
+        		<a  href="catalog.html">Каталог</a>
+        		<a  href="services.html">Услуги</a>
+        		<a  href="registration.html">Регистрация</a>
+      		</nav>
+    	</div>
+	</header>
+	<main>
+		<div id="filters">
+    <label for="minPrice">Минимальная цена:</label>
+    <input type="number" id="minPrice" name="minPrice">
+    <label for="maxPrice">Максимальная цена:</label>
+    <input type="number" id="maxPrice" name="maxPrice">
+    <button id="btn">Сортировка по цене</button>
+  </div>
+
+    <div id="books">
+      <div class="book"  data-book="1100" >
+      	<img src="images/tovar.jpg">
+      	<p>Пожарный шкаф - 1100р.</p>
+        <button id="button1">Описание</button>
+        <div id="myModal1" class="modal" data-cover-value="0">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p class="p1">Описание товара</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="book"  data-book="7900" >
+      	<img src="images/tovar1.jpg">
+      	<p>Пожарный набор- 7900р.</p>
+        <button id="button2">Описание</button>
+        <div id="myModal2" class="modal2">
+          <div class="modal-content2">
+            <span class="close">&times;</span>
+            <p>Описание товара</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="book"  data-book="5200">
+      	<img src="images/tovar2.jpg">
+      	<p>Пожарный шкаф- 5200р.</p>
+        <button id="button3" >Описание</button>
+        <div id="myModal3" class="modal3">
+          <div class="modal-content3">
+            <span class="close">&times;</span>
+            <p>Описание товара</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="book" data-book="8500">
+      	<img src="images/tovar3.jpg">
+      	<p>Пожарный набор - 8500р.</p>
+        <button id="button4">Описание</button>
+        <div id="myModal4" class="modal4">
+          <div class="modal-content4">
+            <span class="close">&times;</span>
+            <p>Описание товара</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="book"  data-book="13740"  >
+      	<img src="images/tovar4.jpg">
+      	<p>Стенд пожарный- 13740р.</p>
+        <button id="button5">Описание</button>
+        <div id="myModal5" class="modal5">
+          <div class="modal-content5">
+            <span class="close">&times;</span>
+            <p>Описание товара</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="book" data-book="950">
+      	<img src="images/tovar5.jpg">
+      	<p>Щит пожарный- 950р.</p>
+        <button id="button6">Описание</button>
+        <div id="myModal6" class="modal6">
+          <div class="modal-content6">
+            <span class="close">&times;</span>
+            <p>Описание товара</p>
+          </div>
+        </div>
+      </div>
+    </div> 
+	</main>
+	<footer class="footer">
+		<img class="svg" src="images/logo.svg" alt="иконка">
+        <div class="footer_colum">
+          <a href="contacts.html">Контакты</a>
+           <a href="services.html">Услуги</a>
+          <a href="catalog.html">Каталог</a>
+          <a href="registration.html">Регистрация</a>
+        </div>
+        <div class="footer_colum">
+          <a href="">Контакты</a>
+          <a href="">8 (800) 111-11-11</a>
+        </div>
+        <div class="footer_colum">
+          <a href="">Правовая документация</a>
+          <a href="">Политика конфиденциальности</a>
+          <a href=""> Пользовательское соглашение</a>
+        </div>
+	</footer>
+	<script src="script_sort.js"></script>
+</body>
+</html>

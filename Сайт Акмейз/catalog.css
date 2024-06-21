@@ -1,0 +1,166 @@
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: auto;  
+}
+
+.header{
+  height: 70px;
+  display: flex;
+  width: 100%;
+  background: #17053B;
+}
+
+.header-content { 
+display: flex;
+justify-content: space-between;
+}
+
+nav{
+  display: flex;
+}
+
+
+nav a {
+  font-family:"Archivo Black", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 38px;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-right: 75px; /*расстояние между словами в шапке*/
+}
+
+
+.svg{
+	height: 70px;
+	width: 190px;
+}
+
+.footer {
+  height: 100%;
+  width: 100%;
+  background: #17053B;
+  margin: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#filters{
+  width: 200px;
+  height: 140px;
+  border: 2px solid #17053B;
+  float:left;
+  border-radius: 5px;
+  margin: 30px;
+  font-family: "Archivo Black", sans-serif;
+}
+
+.price-input{
+  float:left;
+}
+
+.input-text{
+  width: 50px;
+}
+
+
+#books{
+  flex-direction:row;
+  display:flex;
+    
+}
+
+.book{
+  width:150px;
+  padding: 10px;
+  border: 2px solid #17053B;
+  margin: 10px;
+  border-radius: 5px;
+  font-family: 'Roboto';
+}
+
+
+.description{
+  background-color: rgb(165, 209, 248);
+  border:  2px solid rgb(165, 159, 248);
+}
+
+/* Модальный (фон) */
+.modal, .modal2, .modal3, .modal4, .modal5, .modal6{
+  display: none; /* Скрыто по умолчанию */
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+/* Модальное содержание */
+.modal-content,.modal-content2, .modal-content3, .modal-content4,.modal-content5, .modal-content6 {
+  background-color: #e3d1ec;
+  margin: 15% auto; /* расположение*/
+  padding: 20px;
+  border: 1px solid #b790ce;
+  height: 20%;
+  width: 20%;
+}
+
+/* Кнопка закрытия */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+} 
+
+
+
+
+button{
+    background: red;
+    border: 2px soid  black;
+    border-radius: 3px;
+    margin: 5px 5px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+input{
+  background: white;
+}
+
+.footer_colum{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer a{
+  text-decoration: none;
+  list-style: none;
+  color: #FFFFFF;
+  font-family:"Archivo Black", sans-serif;
+  font-weight: bold;
+}
+
+.book img{
+  width: 100%;
+  height: auto;
+  padding: 15px;
+}
+

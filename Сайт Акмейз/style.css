@@ -1,0 +1,165 @@
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: auto;  
+}
+
+.header{
+  height: 70px;
+  display: flex;
+  width: 100%;
+  background: #17053B;
+}
+
+.header-content { 
+display: flex;
+justify-content: space-between;
+}
+
+nav{
+  display: flex;
+}
+
+
+nav a {
+  font-family:"Archivo Black", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 38px;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-right: 75px; /*расстояние между словами в шапке*/
+}
+
+.click{
+  width: 130px;
+  height: 30px;
+  border-radius: 20px;
+  background: red;
+  color: white;
+  margin-top: 5px;
+  border: red; solid 1px;
+  font-family:"Archivo Black", sans-serif;
+  font-weight: bold;
+}
+
+.svg{
+	height: 70px;
+	width: 190px;
+}
+
+.img {
+  width: 1000px;
+  height: 600px;
+  content: "";
+  border-radius: 15px;
+}
+
+.slider {
+  display: flex;
+  margin-top: 50px;
+  margin-left: 150px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 1000px;
+  height: 600px;
+}
+
+
+
+.indicatorimg {
+  width: 30px;
+  height: 30px;
+}
+
+.infographic{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.infographic_container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.blockInfographic {
+  background: white;
+  border-radius: 10px;
+  border: 2px solid #17053B;
+  width: 284px;
+  padding: 10px;
+  font-size: 16px;
+  font-family: 'Roboto';
+  font-style: normal;
+}
+
+.blockInfographic>img {
+  height: 50px;
+}
+
+
+.footer {
+  height: 100%;
+  width: 100%;
+  background: #17053B;
+  margin: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer_colum{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer a{
+  text-decoration: none;
+  list-style: none;
+  color: #FFFFFF;
+  font-family:"Archivo Black", sans-serif;
+  font-weight: bold;
+}
+
+@media screen and (max-width:1200px) {
+  .slider{
+    width: 200px;
+    height: 100px;
+  }
+}
+
+@media screen and (min-width:600px) and (max-width:1024) {
+  .slider{
+    width: 200px;
+    height: 100px;
+  }
+}
+
+
+
+@media screen and (max-width:600px) {
+  .footer{    font-size: 8px;
+    width:80% ;
+    height: 80%;
+  }
+  .footer .svg {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+
+
+
